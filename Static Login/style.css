@@ -1,0 +1,94 @@
+/* style.css */
+
+/* Base reset and background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Container styling */
+.round-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert styling */
+.alert {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  max-width: 400px;
+  z-index: 10;
+}
+
+.alert-danger,
+.alert-success {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* Form styling */
+.form-floating .form-control {
+  padding: 1.25rem 0.75rem;
+}
+
+.form-floating label {
+  color: #777;
+}
+
+select.form-select {
+  padding: 0.75rem;
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .alert {
+    max-width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .round-container {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}
